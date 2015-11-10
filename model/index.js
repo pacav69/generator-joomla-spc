@@ -40,7 +40,7 @@
       this.authorEmail = (ref1 = pkg.author) != null ? ref1.email : void 0;
       this.authorURL = (ref2 = pkg.author) != null ? ref2.url : void 0;
       this.license = (ref3 = pkg.licenses[0]) != null ? ref3.type : void 0;
-      this.currentDate = new Date().getFullYear();
+      this.currentYear = new Date().getFullYear();
       this.modelName = this._.slugify(this.name);
       this.modelClassName = this._.classify(this.name);
       console.log("You called the model subgenerator with the argument " + this.name + ".\nNow let's create that model as models/" + this.modelName + ".php for you...");

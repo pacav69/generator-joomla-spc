@@ -63,7 +63,7 @@ module.exports = class JoomlaSpcGenerator extends yeoman.generators.Base
                 store   : true
             }
             {
-                name: "version"
+                name: "versionno"
                 message: "What's the version number?"
                 default: "1.0.0"
                 store   : true
@@ -92,11 +92,12 @@ module.exports = class JoomlaSpcGenerator extends yeoman.generators.Base
             @authorName = props.authorName
             @authorEmail = props.authorEmail
             @authorURL = props.authorURL
-            @version = props.version
+            @versionno = props.versionno
             @license = props.license
             @requireManageRights = props.requireManageRights
             @legacyJoomla = props.legacyJoomla
             @currentDate = @_getCurrentDate()
+            @currentYear = @_getCurrentYear()
             cb()
         ).bind(@)
     app: ->
@@ -106,12 +107,27 @@ module.exports = class JoomlaSpcGenerator extends yeoman.generators.Base
         @mkdir "app/site"
         @mkdir "src"
         @template "_package.json", "package.json"
-        @copy "_Gruntfile.js.spc", "Gruntfile.js"
+        @copy "_Gruntfile.js", "Gruntfile.js"
         @template "_bower.json", "bower.json"
         @copy "_gitignore", ".gitignore"
 
     _getCurrentDate: ->
-        new Date().getUTCDate()
+        today = new Date  
+        dd = today.getDate()  
+        #The value returned by getMonth is an integer between 0 and 11, referring 0 to January, 1 to February, and so on.  
+        mm = today.getMonth() + 1  
+        yyyy = today.getFullYear()  
+        if dd < 10  
+          dd = '0' + dd  
+        if mm < 10  
+          mm = '0' + mm  
+        today = mm + '-' + dd + '-' + yyyy  
+     _getCurrentYear: ->
+        today = new Date   
+        yyyy = today.getFullYear()   
+        year = yyyy 
+
+        # new Date().getUTCDate()
     projectfiles: ->
         @copy "editorconfig", ".editorconfig"
         @copy "jshintrc", ".jshintrc"

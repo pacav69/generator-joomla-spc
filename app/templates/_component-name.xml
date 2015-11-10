@@ -5,9 +5,9 @@
 	<author><%= authorName %></author>
 	<authorEmail><%= authorEmail %></authorEmail>
 	<authorUrl><%= authorURL %></authorUrl>
-	<copyright>Copyright <%= currentDate %></copyright>
+	<copyright>Copyright <%= currentYear %></copyright>
 	<license><%= license %></license>
-	<version>1.0.0</version>
+	<version><%= versionno %></version>
 	<!-- Description contents contained in separate language file: see languages folder -->
 	<description>COM_<%= _.slugify(componentName).toUpperCase() %>-DESC</description>
 

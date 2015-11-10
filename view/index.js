@@ -40,7 +40,7 @@
       this.authorEmail = (ref1 = pkg.author) != null ? ref1.email : void 0;
       this.authorURL = (ref2 = pkg.author) != null ? ref2.url : void 0;
       this.license = (ref3 = pkg.licenses[0]) != null ? ref3.type : void 0;
-      this.currentDate = new Date().getFullYear();
+      this.currentYear = new Date().getFullYear();
       this.viewFolderName = this._.slugify(this.name);
       this.viewClassName = this._.classify(this.name);
       console.log("You called the view subgenerator with the argument " + this.name + ".\nNow let's create that view under the subdirectory views/" + this.viewFolderName + " for you...");

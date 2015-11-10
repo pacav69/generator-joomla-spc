@@ -3,6 +3,7 @@
 	"description": "<%= description %>",
 	"componentName": "<%= componentName %>",
 	"requireManageRights": "<%= requireManageRights %>",
+	"versionno": "<%= versionno %>",
 	"author":  {
 		"name": "<%= authorName %>",
 		"email": "<%= authorEmail %>",
@@ -14,14 +15,9 @@
 		}
 	],
 	"repository": "",
-	"readme": "<%= description %>",
-	"version": "1.0.0",
+	"readme": "<%= description %>",	
 	"dependencies": {
 	"grunt": "^0.4.5",
-    "grunt-contrib-coffee": "^0.13.0",
-    "grunt-contrib-jshint": "^0.11.3",
-    "grunt-contrib-nodeunit": "^0.4.1",
-    "grunt-contrib-uglify": "^0.10.0",
     "grunt-zip": "^0.17.1",
     "mocha": "~1.14.0",
     "time-grunt": "^1.2.2"

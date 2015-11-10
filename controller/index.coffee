@@ -28,7 +28,7 @@ module.exports = class ControllerGenerator extends yeoman.generators.NamedBase
 		@authorEmail = pkg.author?.email
 		@authorURL = pkg.author?.url
 		@license = pkg.licenses[0]?.type
-		@currentDate = new Date().getFullYear()
+		@currentYear = new Date().getFullYear()
 		@controllerClassName = @._.classify(@name)
 		console.log """
 			You called the controller subgenerator with the argument #{@name}.

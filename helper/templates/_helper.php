@@ -7,7 +7,7 @@
  * @package		<%= _.slugify(componentName) %>
  * @subpackage	<%= helperName %>
  *
- * @copyright	Copyright (C) <%= currentDate %> <%= authorName %>. All rights reserved.
+ * @copyright	Copyright (C) <%= currentYear %> <%= authorName %>. All rights reserved.
  * @license		<%= license %>
  */
 

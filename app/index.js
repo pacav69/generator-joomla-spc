@@ -76,7 +76,7 @@
           "default": "somedomain.com",
           store: true
         }, {
-          name: "version",
+          name: "versionno",
           message: "What's the version number?",
           "default": "1.0.0",
           store: true
@@ -100,11 +100,12 @@
         this.authorName = props.authorName;
         this.authorEmail = props.authorEmail;
         this.authorURL = props.authorURL;
-        this.version = props.version;
+        this.versionno = props.versionno;
         this.license = props.license;
         this.requireManageRights = props.requireManageRights;
         this.legacyJoomla = props.legacyJoomla;
         this.currentDate = this._getCurrentDate();
+        this.currentYear = this._getCurrentYear();
         return cb();
       }).bind(this));
     };
@@ -116,13 +117,31 @@
       this.mkdir("app/site");
       this.mkdir("src");
       this.template("_package.json", "package.json");
-      this.copy("_Gruntfile.js.spc", "Gruntfile.js");
+      this.copy("_Gruntfile.js", "Gruntfile.js");
       this.template("_bower.json", "bower.json");
       return this.copy("_gitignore", ".gitignore");
     };
 
     JoomlaSpcGenerator.prototype._getCurrentDate = function() {
-      return new Date().getUTCDate();
+      var dd, mm, today, yyyy;
+      today = new Date;
+      dd = today.getDate();
+      mm = today.getMonth() + 1;
+      yyyy = today.getFullYear();
+      if (dd < 10) {
+        dd = '0' + dd;
+      }
+      if (mm < 10) {
+        mm = '0' + mm;
+      }
+      return today = mm + '-' + dd + '-' + yyyy;
+    };
+
+    JoomlaSpcGenerator.prototype._getCurrentYear = function() {
+      var today, year, yyyy;
+      today = new Date;
+      yyyy = today.getFullYear();
+      return year = yyyy;
     };
 
     JoomlaSpcGenerator.prototype.projectfiles = function() {

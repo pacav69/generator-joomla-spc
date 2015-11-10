@@ -3,7 +3,7 @@
 * @package     <%= _.slugify(componentName) %>
 * @subpackage  <%= _.slugify(name) %>
 *
-* @copyright   Copyright (C) <%= currentDate %> <%= authorName %>. All rights reserved.
+* @copyright   Copyright (C) <%= currentYear %> <%= authorName %>. All rights reserved.
 * @license     <%= license %>
 */
 

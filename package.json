@@ -5,17 +5,17 @@
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/[username]/generator-joomla-spc",
-  "bugs": "https://github.com/[username]/generator-joomla-spc/issues",
+  "homepage": "https://github.com/pacav69/generator-joomla-spc",
+  "bugs": "https://github.com/pacav69/generator-joomla-spc/issues",
   "author": {
-    "name": "[username]",
-    "email": "[username]@gmail.com",
-    "url": "https://github.com/[username]"
+    "name": "pacav69",
+    "email": "pacav69@gmail.com",
+    "url": "https://github.com/pacav69"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/[username]/generator-joomla-spc.git"
+    "url": "git://github.com/pacav69/generator-joomla-spc.git"
   },
   "scripts": {
     "test": "mocha"
@@ -31,6 +31,7 @@
     "grunt-contrib-nodeunit": "^0.4.1",
     "grunt-contrib-uglify": "^0.10.0",
     "mocha": "~1.14.0",
+    "semver": "^5.0.3",
     "slugify": "^0.1.1",
     "time-grunt": "^1.2.2"
   },

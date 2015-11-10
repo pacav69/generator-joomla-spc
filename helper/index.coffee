@@ -27,7 +27,7 @@ module.exports = class HelperGenerator extends yeoman.generators.NamedBase
 		@authorEmail = pkg.author?.email
 		@authorURL = pkg.author?.url
 		@license = pkg.licenses[0]?.type
-		@currentDate = new Date().getFullYear()
+		@currentYear = new Date().getFullYear()
 		@helperName = @._.slugify(@name)
 		@helperClassName = @._.classify(@name)
 		console.log """

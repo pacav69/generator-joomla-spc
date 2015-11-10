@@ -3,13 +3,13 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+       pkg: grunt.file.readJSON('package.json'),
         zip: {
             'using-cwd': {
                 cwd: 'src/',
                 // Files will zip with src as the root
                 src: ['src/**'],
-                dest: 'dist/com_<%= pkg.name %>_v<%= pkg.version %>.zip'
+                dest: 'dist/com_<%= _.slugify(componentName) %>_v<%= versionno %>.zip'
             }
         }
 
