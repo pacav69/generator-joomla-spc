@@ -93,7 +93,7 @@ Each generator creates a new file with phpdocumentor and joomla standards, packa
 
 ## Usage
 
-### In this project file
+### In this project directory
 modify the index.coffee scripts
 
 run
@@ -103,7 +103,7 @@ run
 this will compile the coffee scripts
 
 to use temporarily 
-open up a command prompt in working directory
+open up a command prompt in this project directory
 type
 
 	npm link
