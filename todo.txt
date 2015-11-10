@@ -1,0 +1,31 @@
+add gruntfile.js to app directory for 
+	php lint
+	copy files to admin and site directories 
+	then zip files for deployment
+	copy files to joomla dev for testing
+	copy files from joomla dev after testing
+	maintain tracking of files copied
+	monitor changes and copy files to joomla dev
+	add package.json file for local use and development
+
+move coffee scripts to src directory
+move templates in app to src then setup for copying to app
+allow connection to mysql database
+config localhost in joomla development environment
+setup for debugging
+add user.json for storage of user config in global location for repeated use
+modify yomen generator for reading of user.json file to set defaults
+add the ability to import sql files from joomla mysql database
+add snippets for joomla specific code
+allow selection of type of joomla project tpl, com, plg
+
+add sub generator for joomla admin templates
+add sub generator for joomla site templates
+add sub generator for plugins
+add sub generator for modules
+
+create new readme.md file for project
+create new respositry on github
+submit joomla generator to yomen repositry
+
+

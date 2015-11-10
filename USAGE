@@ -1,0 +1,6 @@
+
+component: ``yo joomla-spc
+*model*: ``yo joomla-spc:model "model-name"`
+*view*: ``yo joomla-spc:view "view-name"`` 
+*controller*: ``yo joomla-spc:controller "controller-name"``
+*helper*: ``yo joomla-spc:helper "helper-name"``
