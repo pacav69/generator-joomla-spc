@@ -24,8 +24,6 @@ add sub generator for joomla site templates
 add sub generator for plugins
 add sub generator for modules
 
-create new readme.md file for project
-create new respositry on github
 submit joomla generator to yomen repositry
 
 

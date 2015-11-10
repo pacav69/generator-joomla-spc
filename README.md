@@ -1,6 +1,7 @@
 # generator-joomla-spc [![Build Status](https://secure.travis-ci.org/srsgores/generator-joomla-spc.png?branch=master)](https://travis-ci.org/srsgores/generator-joomla-spc)
+
 Based on generator-joomla-component by Sean Goresht
-# generator-joomla-component [![Build Status](https://secure.travis-ci.org/srsgores/generator-joomla-component.png?branch=master)](https://travis-ci.org/srsgores/generator-joomla-component)
+ [![Build Status](https://secure.travis-ci.org/srsgores/generator-joomla-component.png?branch=master)](https://travis-ci.org/srsgores/generator-joomla-component)
 
 A component generator for [Yeoman](http://yeoman.io).
 
@@ -39,21 +40,29 @@ Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](
 ```
 $ npm install -g yo
 ```
+## Other requirements
+
+Gruntjs-cli
+
 
 ### Yeoman Generators
 
 Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
 
-To install generator-joomla-component from npm, run:
+Copy from git repository
+
+or
+(not yet available)
+To install generator-joomla-spc from npm, run:
 
 ```
-$ npm install -g generator-joomla-component
+$ npm install -g generator-joomla-spc
 ```
 
 Finally, initiate the generator:
 
 ```
-$ yo joomla-component
+$ yo joomla-spc
 ```
 
 ## Subgenerators
@@ -61,11 +70,43 @@ There are currently **4** subgenerators planned; only ``controller`` is working 
 
 1. *model*: ``yo joomla-spc:model "model-name"`` - *Not yet implemented*
 2. *view*: ``yo joomla-spc:view "view-name"`` - *Not yet implemented*
-3. *controller*: ``yo joomla-spc:controller "controller-name"`` - **NEW**
+3. *controller*: ``yo joomla-spc:controller "controller-name"`` 
 4. *helper*: ``yo joomla-spc:helper "helper-name"`` - *Not yet implemented*
+
+## Other generators
+
+Select from list upon startup of *yo joomla-spc*
+
+*component*:*Not yet implemented*
+
+*module*:*Not yet implemented*
+
+*plugin*: *Not yet implemented*
+
+*template*: *Not yet implemented*
+
+*templateadmin*: *Not yet implemented*
+
 
 
 Each generator creates a new file with phpdocumentor and joomla standards, packaged and subpackaged as needed
+
+## Usage
+
+Create a working directory
+open up a command prompt in the working directory
+
+    yo joomla-spc
+
+
+after running the generator files will be stored in src directory
+modify files to your project requirements
+
+from the command prompt type 
+
+    grunt 
+
+this will zip (grunt's default task) up files located in src directory and place the zip file in dist directory.
 
 ## Reference
 The components and starting logic are derived form the book [Learning Joomla 3 Extension Development Third Edition](http://www.amazon.com/Learning-Joomla-Extension-Development-Third-Edition/dp/1782168370) (you can also find this on *other* alternative locations on the internet [by googling](https://encrypted.google.com/search?{google:acceptedSuggestion}oq=learning+joomla+3+extension+development&sourceid=chrome&ie=UTF-8&q=learning+joomla+3+extension+development))
@@ -73,6 +114,9 @@ The components and starting logic are derived form the book [Learning Joomla 3 E
 [joomla-platform-examples](https://github.com/joomla/joomla-platform-examples)
 
 [sublime text 2 joomla snippets](https://github.com/joomlapro/joomla-bundle "sublime text 2 joomla snippets")
+
+# To-do
+read the todo.txt file
 
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
