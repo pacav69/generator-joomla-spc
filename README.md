@@ -93,6 +93,25 @@ Each generator creates a new file with phpdocumentor and joomla standards, packa
 
 ## Usage
 
+### In this project file
+modify the index.coffee scripts
+
+run
+
+	grunt 
+
+this will compile the coffee scripts
+
+to use temporarily 
+open up a command prompt in working directory
+type
+
+	npm link
+
+this will allow yo joomla-spc to be run in the working directory
+
+### For the working directory
+
 Create a working directory
 open up a command prompt in the working directory
 
@@ -102,7 +121,7 @@ open up a command prompt in the working directory
 after running the generator files will be stored in src directory
 modify files to your project requirements
 
-from the command prompt type 
+from the command prompt in the working directory type 
 
     grunt 
 
