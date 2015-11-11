@@ -1,4 +1,7 @@
-# generator-joomla-spc [![Build Status](https://secure.travis-ci.org/srsgores/generator-joomla-spc.png?branch=master)](https://travis-ci.org/srsgores/generator-joomla-spc)
+# ![joomla-spc](media/silverpclogo.png)
+
+> Helping you build a better joomla
+# Generator-joomla-spc [![Build Status](https://secure.travis-ci.org/pacav69/generator-joomla-spc.png?branch=master)](https://travis-ci.org/pacav69/generator-joomla-spc)
 
 Based on generator-joomla-component by Sean Goresht
  [![Build Status](https://secure.travis-ci.org/srsgores/generator-joomla-component.png?branch=master)](https://travis-ci.org/srsgores/generator-joomla-component)
