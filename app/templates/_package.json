@@ -18,7 +18,7 @@
 	"readme": "<%= description %>",	
 	"dependencies": {
 	"grunt": "^0.4.5",
-    "grunt-zip": "^0.17.1",
+	"grunt-contrib-compress": "^0.14.0",
     "mocha": "~1.14.0",
     "time-grunt": "^1.2.2"
 	}
