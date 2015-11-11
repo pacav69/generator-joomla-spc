@@ -1,9 +1,12 @@
 {
   "name": "generator-joomla-spc",
-  "version": "0.0.3",
-  "description": "Joomla spc component generator for Yeoman",
+  "version": "0.0.4",
+  "description": "Joomla-spc generator for Yeoman. Creates Joomla 2.5 and 3.0 files",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "Joomla",
+    "spc",
+    "grunt"
   ],
   "homepage": "https://github.com/pacav69/generator-joomla-spc",
   "bugs": "https://github.com/pacav69/generator-joomla-spc/issues",
@@ -21,7 +24,6 @@
     "test": "mocha"
   },
   "dependencies": {
-    "grunt-zip": "^0.17.1",
     "yeoman-generator": "~0.14.0"
   },
   "devDependencies": {
