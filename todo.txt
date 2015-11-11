@@ -26,4 +26,11 @@ add sub generator for modules
 
 submit joomla generator to yomen repositry
 
+possible addons
+https://www.npmjs.com/package/grunt-mysql-runfile
+https://www.npmjs.com/package/grunt-joomla-packager
+https://www.npmjs.com/package/joomla
+https://www.npmjs.com/package/joomla-gulp
+https://www.npmjs.com/package/generator-joomla-admin-template
+
 
