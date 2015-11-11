@@ -23,8 +23,10 @@ add sub generator for joomla admin templates
 add sub generator for joomla site templates
 add sub generator for plugins
 add sub generator for modules
+add screenshot capabilty for templates
 
 submit joomla generator to yomen repositry
+create gif of using the app
 
 possible addons
 https://www.npmjs.com/package/grunt-mysql-runfile
