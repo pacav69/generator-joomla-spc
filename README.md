@@ -56,7 +56,7 @@ Yeoman travels light. He didn't pack any generators when he moved in. You can th
 Copy from git repository
 
 or
-(not yet available)
+
 To install generator-joomla-spc from npm, run:
 
 ```
