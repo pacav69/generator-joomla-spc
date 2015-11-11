@@ -3,6 +3,7 @@ node_js:
   - '0.8'
   - '0.10'
 
+
 before_install:
   - currentfolder=${PWD##*/}
   - if [ "$currentfolder" != 'generator-joomla-spc' ]; then cd .. && eval "mv $currentfolder generator-joomla-spc" && cd generator-joomla-spc; fi
