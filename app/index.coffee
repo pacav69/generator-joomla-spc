@@ -108,6 +108,7 @@ module.exports = class JoomlaSpcGenerator extends yeoman.generators.Base
         @mkdir "src"
         @template "_package.json", "package.json"
         @copy "_Gruntfile.js", "Gruntfile.js"
+        @copy "../USEAGE", "USEAGE"
         @template "_bower.json", "bower.json"
         @copy "_gitignore", ".gitignore"
 

@@ -118,6 +118,7 @@
       this.mkdir("src");
       this.template("_package.json", "package.json");
       this.copy("_Gruntfile.js", "Gruntfile.js");
+      this.copy("../USEAGE", "USEAGE");
       this.template("_bower.json", "bower.json");
       return this.copy("_gitignore", ".gitignore");
     };

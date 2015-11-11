@@ -1,0 +1,20 @@
+Description:
+    Creates Joomla 2.5 and 3.0 files
+
+Options:
+    --skip-install: Skips the automatic execution of `bower` and `npm`
+      after scaffolding has finished.
+    --s: alias --skip-install
+
+Example:
+    yo joomla-spc [--skip-install] [--silent]
+
+sub-generators:    
+these can be called after the scaffold has been created
+
+model: yo joomla-spc:model "model-name"
+view: yo joomla-spc:view "view-name" 
+controller: yo joomla-spc:controller "controller-name"
+helper: yo joomla-spc:helper "helper-name"
+
+component: yo joomla-spc
