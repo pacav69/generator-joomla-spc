@@ -1,6 +1,6 @@
 {
   "name": "generator-joomla-spc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Joomla spc component generator for Yeoman",
   "keywords": [
     "yeoman-generator"
