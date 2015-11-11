@@ -1,6 +1,6 @@
 
 /*
-	generator-joomla-component
+	generator-joomla-spc
 
 	index.coffee
 

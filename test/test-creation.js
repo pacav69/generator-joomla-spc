@@ -26,7 +26,7 @@ describe('joomla-spc generator', function ()
 				return done(err);
 			}
 
-			this.app = helpers.createGenerator('joomla-component:app', [
+			this.app = helpers.createGenerator('joomla-spc:app', [
 				'../../app'
 			]);
 			done();

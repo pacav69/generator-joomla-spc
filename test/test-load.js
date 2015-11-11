@@ -3,7 +3,7 @@
 
 var assert = require('assert');
 
-describe('joomla-component generator', function ()
+describe('joomla-spc generator', function ()
 {
 	it('can be imported without blowing up', function ()
 	{
