@@ -1,7 +1,7 @@
 # ![joomla-spc](media/silverpclogo.png)
 
 > Helping you build a better Joomla
-> 
+
 # Generator-joomla-spc [![Build Status](https://secure.travis-ci.org/pacav69/generator-joomla-spc.png?branch=master)](https://travis-ci.org/pacav69/generator-joomla-spc)
 
 Based on generator-joomla-component by Sean Goresht
@@ -19,7 +19,7 @@ Using this generator, you can quickly and effortlessly *scaffold* out a new [joo
 * PHPDocumentor stubs for every method, as well as page-level doc blocks
 * Uses ``'`` over ``"``, because that's what the official Joomla library uses
 
-So rather than manually creating your own ``config.xml`` and other config files, you just need to load up this generator, type in your options, and everything is set up for you.  If you want to add a new model, view, or controller, just use the subgenerators!
+So rather than manually creating your own ``config.xml`` and other config files, you just need to load up this generator, type in your options, and everything is set up for you.  If you want to add a new model, view, or controller, just use the sub-generators!
 
 What this generator does is place the code in a src folder for editing.
 
@@ -140,6 +140,13 @@ The components and starting logic are derived form the book [Learning Joomla 3 E
 
 # To-do
 read the todo.txt file
+
+## Help
+Information on how to use sub-generators can be found by using:
+
+	yo  joomla-spc --help
+
+or read the USAGE file in the app directory.
 
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
