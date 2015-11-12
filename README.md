@@ -3,6 +3,7 @@
 > Helping you build a better Joomla
 
 # Generator-joomla-spc [![Build Status](https://secure.travis-ci.org/pacav69/generator-joomla-spc.png?branch=master)](https://travis-ci.org/pacav69/generator-joomla-spc)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Based on generator-joomla-component by Sean Goresht
  [![Build Status](https://secure.travis-ci.org/srsgores/generator-joomla-component.png?branch=master)](https://travis-ci.org/srsgores/generator-joomla-component)
