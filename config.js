@@ -1,5 +1,6 @@
 /**
-* Config file
+* User Config file for generator-joomla-spc
+*
 */
 
 'use strict';
@@ -12,7 +13,10 @@ module.exports = {
   , createConfig: createConfig
   , updateVersion: updateVersion
 }
-
+/**
+* Setup file config.json in the home environment under the .yeoman-spc 
+* directory and set the defaults.
+*/
 var home            = process.env.HOME || process.env.USERPROFILE
   , configDirectory = path.join(home, '.yeoman-spc')
   , configPath      = path.join(configDirectory, 'config.json')
@@ -26,7 +30,7 @@ var home            = process.env.HOME || process.env.USERPROFILE
 /**
  *  Read the config file
  *  And trigger the callback function with errors and
- *  datas as parameters
+ *  data as parameters
  */
 function getConfig(cb) {
 debugger
@@ -49,7 +53,7 @@ debugger
 /**
  *  Create the config file
  *
- *  @param object values Values to write in the config file
+ *  @param object values to write in the config file
  *  @param function cb Callback function
  */
 function createConfig(values, cb) {
@@ -74,10 +78,9 @@ function createConfig(values, cb) {
 }
 
 /**
- * Update the config file to bump
- * the Wordpress version
- *
- * @param string version Wordpress version
+ * Update the config file to bump the version
+ * 
+ * @param string version
  */
 function updateVersion(versionno) {
   getConfig(function(err, values) {
