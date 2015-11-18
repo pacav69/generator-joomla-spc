@@ -24,6 +24,8 @@ So rather than manually creating your own ``config.xml`` and other config files,
 
 What this generator does is place the code in a src folder for editing.
 
+Stores user data in config.json in home directory for later usage with generators.
+
 Makes use of gruntjs to do the following:
 
 
