@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             main: {
                 options: {
                     mode: 'zip',
-                    archive: 'dist/' + 'com_default-value_v1.0.0.zip'
+                    archive: 'dist/'+ "com_" + "<%= componentName %>" + "_v" + "<%= versionno %>" + '.zip'
                 },
                 expand: true,
                 cwd: 'src/',
@@ -16,14 +16,6 @@ module.exports = function(grunt) {
                 dest: ''
             }
         }
-        // zip: {
-        //     'using-cwd': {
-        //         cwd: 'src/',
-        //         // Files will zip with src as the root
-        //         src: ['src/**'],
-        //         dest: 'dist/com_default-value_v1.0.0.zip'
-        //     }
-        // }
 
     });
 
