@@ -27,6 +27,8 @@
   fs = require('fs');
 
   yeoman = require('yeoman-generator');
+  yosay = require('yosay');
+  chalk = require('chalk');
 
   rimraf = require('rimraf');
 
@@ -39,6 +41,15 @@
   module.exports = Generator;
 
   util.inherits(Generator, yeoman.generators.NamedBase);
+
+  Generator.prototype.startGenerator = function() {
+ //  // initializing: {
+
+ //    // Welcome
+     //welcome: function () {
+      this.log(yosay(chalk.white('Welcome to the SPC Joomla Extension generator!')));
+    //}
+  };
 
   Generator.prototype.getConfig = function() {
     var cb, self;
@@ -61,6 +72,7 @@
     var cb, prompts, self;
     cb = this.async();
     self = this;
+    // console.log(this.yeoman)
     prompts = [
       {
         name: 'description',
@@ -73,15 +85,15 @@
       }, {
         name: 'authorName',
         message: 'What\'s your name?',
-        'default': self.defaultAuthorName
+        'default': chalk.white(self.defaultAuthorName)
       }, {
         name: 'authorEmail',
         message: 'What\'s your e-mail?',
-        'default': self.defaultAuthorEmail
+        'default': chalk.white(self.defaultAuthorEmail)
       }, {
         name: 'authorURL',
         message: 'What\'s your website?',
-        'default': self.defaultAuthorURL
+        'default': chalk.white(self.defaultAuthorURL)
       }, {
         name: 'versionno',
         message: 'What\'s the version number?',
