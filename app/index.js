@@ -85,15 +85,15 @@
       }, {
         name: 'authorName',
         message: 'What\'s your name?',
-        'default': chalk.white(self.defaultAuthorName)
+        'default': self.defaultAuthorName
       }, {
         name: 'authorEmail',
         message: 'What\'s your e-mail?',
-        'default': chalk.white(self.defaultAuthorEmail)
+        'default': self.defaultAuthorEmail
       }, {
         name: 'authorURL',
         message: 'What\'s your website?',
-        'default': chalk.white(self.defaultAuthorURL)
+        'default': self.defaultAuthorURL
       }, {
         name: 'versionno',
         message: 'What\'s the version number?',
