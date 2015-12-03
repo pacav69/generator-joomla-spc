@@ -1,0 +1,25 @@
+{
+	"name": "<%= _.slugify(componentName) %>",
+	"description": "<%= description %>",
+	"componentName": "<%= componentName %>",
+	"requireManageRights": "<%= requireManageRights %>",
+	"versionno": "<%= versionno %>",
+	"author":  {
+		"name": "<%= authorName %>",
+		"email": "<%= authorEmail %>",
+		"url": "<%= authorURL %>"
+	},
+	"licenses": [
+		{
+			"type": "<%= license %>"
+		}
+	],
+	"repository": "",
+	"readme": "<%= description %>",	
+	"dependencies": {
+	"grunt": "^0.4.5",
+	"grunt-contrib-compress": "^0.14.0",
+    "mocha": "~1.14.0",
+    "time-grunt": "^1.2.2"
+	}
+}

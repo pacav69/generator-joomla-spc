@@ -17,4 +17,3 @@ view: yo joomla-spc:view "view-name"
 controller: yo joomla-spc:controller "controller-name"
 helper: yo joomla-spc:helper "helper-name"
 
-component: yo joomla-spc

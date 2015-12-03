@@ -33,7 +33,7 @@ var home            = process.env.HOME || process.env.USERPROFILE
  *  data as parameters
  */
 function getConfig(cb) {
-debugger
+// debugger
  try {
     fs.readFile(configPath, 'utf8', function(err, data) {
       if (err) {
