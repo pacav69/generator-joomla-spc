@@ -1,8 +1,5 @@
 # ![joomla-spc](media/silverpclogo.png)
 
-# ![joomla-spc](http://https://cldup.com/I-R7eDB7Q0.png)
-
-
 > Helping you build a better Joomla
 
 # Generator-joomla-spc [![Build Status](https://secure.travis-ci.org/pacav69/generator-joomla-spc.png?branch=master)](https://travis-ci.org/pacav69/generator-joomla-spc)
