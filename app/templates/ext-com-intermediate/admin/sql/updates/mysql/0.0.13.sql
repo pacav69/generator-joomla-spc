@@ -1,0 +1,1 @@
+ALTER TABLE `#__com_<%= _.slugify(componentName) %>` ADD `params` VARCHAR(1024) NOT NULL DEFAULT '';

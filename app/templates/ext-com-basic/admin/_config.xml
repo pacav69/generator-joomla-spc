@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<fieldset name="settings" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_MAIN_HEADER" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_MAIN_HEADER_DESC">
+
+		<field type="text" name="img_dir" size="20" default="/images/myalbum" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMAGE_DIR" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMAGE_DIR_DESC" />
+		
+		<field type="list" name="folder_cache" default="1" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_FOLDER_CACHE" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_FOLDER_CACHE_DESC">
+			<option value="1">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_ENABLED</option>
+			<option value="0">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DISABLED</option>
+		</field>
+
+		<field type="list" name="folder_permissions" default="0755" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_FOLDER_PERMISSIONS" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_FOLDER_PERMISSIONS_DESC">
+			<option value="0755">755</option>
+			<option value="0705">705</option>
+			<option value="0644">644</option>
+		</field>
+
+		<field type="spacer" />
+				
+		<field type="list" name="display_javascript" default="colorbox" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DISPLAY_JS" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DISPLAY_JS_DESC">
+			<option value="colorbox">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DISPLAY_JS_COLORBOX</option>
+			<option value="fancybox">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DISPLAY_JS_FANCYBOX</option>
+			<option value="none">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DISPLAY_JS_NONE</option>
+		</field>
+				
+		<field type="list" name="upload_javascript" default="1" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_UPLOAD_JS" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_UPLOAD_JS_DESC">
+			<option value="1">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_ENABLED</option>
+			<option value="0">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DISABLED</option>
+		</field>
+				
+		<field type="list" name="sort" default="asc" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_SORT" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_SORT_DESC">
+			<option value="asc">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_SORT_ASCEND</option>
+			<option value="desc">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_SORT_DESCEND</option>
+			<option value="folder_desc">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_SORT_FOLDER_DESCEND</option>
+		</field>
+				
+	</fieldset>
+
+	<fieldset name="upload" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_UPLOAD_HEADER" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_UPLOAD_HEADER_DESC">
+
+		<field type="text" name="max_exec_time" size="3" default="600" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_MAX_EXEC_TIME" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_MAX_EXEC_TIME_DESC" />
+
+	</fieldset>
+
+	<fieldset name="dimensions" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DIMENSIONS_HEADER" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DIMENSIONS_HEADER_DESC">
+
+		<field type="list" name="img_resizemethod" default="0" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMG_RESIZEMETHOD" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMG_RESIZEMETHOD_DESC">
+			<option value="0">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMG_RESIZEMETHOD0</option>
+			<option value="1">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMG_RESIZEMETHOD1</option>
+			<option value="2">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMG_RESIZEMETHOD2</option>
+		</field>
+
+		<field type="text" name="img_thumbfactor" size="2" default="4" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMG_THUMBFACTOR" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMG_THUMBFACTOR_DESC" />
+
+		<field type="spacer" />
+
+		<field type="text" name="imgsize_default_width" size="5" default="640" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMGSIZE_DEFAULT_WIDTH" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMGSIZE_DEFAULT_WIDTH_DESC" />
+		<field type="text" name="imgsize_default_height" size="5" default="480" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMGSIZE_DEFAULT_HEIGHT" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMGSIZE_DEFAULT_HEIGHT_DESC" />
+
+		<field type="spacer" />
+
+		<field type="text" name="imgsize_max_width" size="5" default="1280" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMGSIZE_MAX_WIDTH" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMGSIZE_MAX_WIDTH_DESC" />
+		<field type="text" name="imgsize_max_height" size="5" default="960" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMGSIZE_MAX_HEIGHT" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMGSIZE_MAX_HEIGHT_DESC" />
+
+		<field type="spacer" />
+
+		<field type="text" name="spacing_horizontal" size="5" default="10" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_HORIZONTAL_SPACING" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_HORIZONTAL_SPACING_DESC" />
+		<field type="text" name="spacing_vertical" size="5" default="40" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_VERTICAL_SPACING" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_VERTICAL_SPACING_DESC" />
+
+		<field type="list" name="img_hide_caption" default="0" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMG_HIDE_CAPTION" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_IMG_HIDE_CAPTION_DESC">
+			<option value="1">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_ENABLED</option>
+			<option value="0">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DISABLED</option>
+		</field>
+		<field type="text" name="spacing_vertical_img_only" size="5" default="20" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_VERTICAL_SPACING_IMG_ONLY" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_VERTICAL_SPACING_IMG_ONLY_DESC" />
+
+	</fieldset>
+
+	<fieldset name="debug" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DEBUG_HEADER" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DEBUG_HEADER_DESC">
+
+		<field type="list" name="debug" default="0" label="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DEBUG" description="COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DEBUG_DESC">
+			<option value="1">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_ENABLED</option>
+			<option value="0">COM_<%= _.slugify(componentName).toUpperCase() %>_CFG_DISABLED</option>
+		</field>
+				
+	</fieldset>
+
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+
+		<field type="rules" name="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" validate="rules" filter="rules" component="com_myalbum" section="component" />
+
+	</fieldset>
+</config>

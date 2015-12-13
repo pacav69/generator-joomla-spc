@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+
+	<name>COM_<%= _.slugify(componentName).toUpperCase() %></name>
+	<creationDate><%= currentDate %></creationDate>
+	<author><%= authorName %></author>
+	<authorEmail><%= authorEmail %></authorEmail>
+	<authorUrl><%= authorURL %></authorUrl>
+	<copyright>Copyright <%= currentYear %> All rights reserved.</copyright>
+	<license><%= license %></license>
+	<version><%= versionno %></version>
+	<!-- Description contents contained in separate language file: see languages folder sys.ini -->
+	<description>COM_<%= _.slugify(componentName).toUpperCase() %>_DESCRIPTION</description>
+
+	<scriptfile>script.php</scriptfile>
+
+<!-- 	<files folder="site">
+		<filename>index.html</filename>
+		<filename><%= _.slugify(componentName) %>.php</filename>
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<folder>views</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>lib</folder>
+	</files> -->
+
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_<%= _.slugify(componentName) %>.ini</language>
+	</languages>
+
+	<media destination="com_<%= _.slugify(componentName) %>" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+
+	<administration>
+		<menu img="../media/com_<%= _.slugify(componentName) %>/images/<%= _.slugify(componentName) %>_menu.png">COM_<%= _.slugify(componentName).toUpperCase() %>_ADMINMENU</menu>
+
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename><%= _.slugify(componentName) %>.php</filename>
+			<filename>controller.php</filename>
+			<filename>releasenotes.txt</filename>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>helpers</folder>
+			<folder>libraries</folder>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_<%= _.slugify(componentName) %>.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_<%= _.slugify(componentName) %>.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

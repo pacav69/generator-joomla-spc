@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type = "plugin" version = "2.5" group="<%= _.slugify(componentGroup)%>" method = "upgrade">
-	<name><%= _.slugify(componentGroup)%> - <%= _.slugify(componentName)%></name>
+<extension type="plugin" version="2.5" group="<%= _.slugify(componentGroup)%>" method="upgrade">
+	<name><%= _.str.capitalize( _.slugify(componentGroup)) %> - <%= _.slugify(componentName)%></name>
 	<creationDate><%= currentDate %></creationDate>
 	<author><%= authorName %></author>
 	<authorEmail><%= authorEmail %></authorEmail>

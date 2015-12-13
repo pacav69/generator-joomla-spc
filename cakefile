@@ -1,0 +1,7 @@
+{exec} = require 'child_process'
+
+task 'compile', 'compile the coffee scripts', ->
+
+exec 'coffee -cm app/index.coffee'
+
+console.log('Compile complete') 

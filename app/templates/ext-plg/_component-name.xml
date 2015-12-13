@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+f<?xml version="1.0" encoding="utf-8"?>
 <extension type = "component" version = "3.0" method = "upgrade">
 	<name><%= _.slugify(componentName)%></name>
 	<creationDate><%= currentDate %></creationDate>
@@ -8,7 +8,7 @@
 	<copyright>Copyright <%= currentYear %></copyright>
 	<license><%= license %></license>
 	<version><%= versionno %></version>
-	<!-- Description contents contained in separate language file: see languages folder -->
+	<!-- Description contents contained in separate language file: see language folder -->
 	<description>COM_<%= _.slugify(componentName).toUpperCase() %>-DESC</description>
 
 	<!-- Runs on install/uninstall/update; New in 1.6 -->
@@ -33,7 +33,7 @@
 	<scriptfile>install-uninstall.php</scriptfile>
 
 	<languages folder = "site">
-		<language tag = "en-GB">languages/en-GB/en-GB.com_<%= _.slugify(componentName)%>.ini</language>
+		<language tag = "en-GB">language/en-GB/en-GB.com_<%= _.slugify(componentName)%>.ini</language>
 	</languages>
 
 	<administration>
@@ -58,8 +58,8 @@
 		</files>
 
 		<languages folder = "admin">
-			<language tag = "en-GB">languages/en-GB/en-GB.com_<%= _.slugify(componentName)%>.ini</language>
-			<language tag = "en-GB">languages/en-GB/en-GB.com_<%= _.slugify(componentName)%>.sys.ini</language>
+			<language tag = "en-GB">language/en-GB/en-GB.com_<%= _.slugify(componentName)%>.ini</language>
+			<language tag = "en-GB">language/en-GB/en-GB.com_<%= _.slugify(componentName)%>.sys.ini</language>
 		</languages>
 
 	</administration>

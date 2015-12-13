@@ -1,6 +1,6 @@
 {
   "name": "generator-joomla-spc",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Joomla-spc generator for Yeoman. Creates Joomla 2.5 and 3.0 files",
   "keywords": [
     "yeoman-generator",
@@ -29,15 +29,20 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-coffee": "0.0.6",
+    "grunt-coffeelint": "0.0.13",
     "grunt-contrib-coffee": "^0.13.0",
     "grunt-contrib-compress": "^0.14.0",
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-nodeunit": "^0.4.1",
     "grunt-contrib-uglify": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mysql-runfile": "^0.2.1",
     "mocha": "~1.14.0",
     "semver": "^5.0.3",
     "slugify": "^0.1.1",
-    "time-grunt": "^1.2.2"
+    "time-grunt": "^1.2.2",
+    "ucfirst": "^1.0.0"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"

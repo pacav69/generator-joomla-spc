@@ -25,8 +25,8 @@ add sub generator for plugins
 add sub generator for modules
 add screenshot capabilty for templates
 
-submit joomla generator to yomen repositry
-create gif of using the app
+submit joomla generator to yeomen repositry
+create animated gif of using the app
 
 possible addons
 https://www.npmjs.com/package/grunt-mysql-runfile
