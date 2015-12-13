@@ -1,4 +1,4 @@
-# ![joomla-spc](media/silverpclogo.png)
+# ![SilverPC Logo](http://cldup.com/I-R7eDB7Q0.png)
 
 > Helping you build a better Joomla
 
