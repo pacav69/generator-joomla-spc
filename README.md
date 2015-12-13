@@ -110,11 +110,12 @@ Select from list upon startup of *yo joomla-spc*
 
 *plugin*: *implemented*
 
+- Can select a group for the plugin - Content, Extension, authentication etc.
+
 *template*: *Not yet implemented*
 
 *templateadmin*: *Not yet implemented*
 
-Each generator creates a new file with phpdocumentor and joomla standards, packaged and subpackaged as needed
 
 ## Usage
 
@@ -158,25 +159,25 @@ from the command prompt in the working directory type
 
 this will zip (grunt's default task) up files located in app directory and place the zip file in dist directory.
 
-## Using the extensions
+## Using the extensions generated
 
-Recommend going [here](https://bitnami.com/stack/joomla) to download and install bitnami joomla for your system.
+Recommend going [here](https://bitnami.com/stack/joomla) to download and install Bitnami Joomla for your system.
 
 After creating the extension in your working directory run 
 
 	grunt 
 
-and the default task will zip up the app directory and place the file in the dist directory. This file then can be installed into Joomla using the normal procedure. By installing the extension it will register the extension and have the ability to be directly edited and debugged within the Joomla installation.
+and the default task will zip up the app directory and place the file in the dist directory. This file can then be installed into Joomla using the normal procedure. By installing the extension it will register it and have the ability to be directly edited and debugged within the Joomla installation.
 The generated extension can be zipped up and installed by default.
 
-## Reference
+## References
 The components and starting logic are derived form the book [Learning Joomla 3 Extension Development Third Edition](http://www.amazon.com/Learning-Joomla-Extension-Development-Third-Edition/dp/1782168370) (you can also find this on *other* alternative locations on the internet [by googling](https://encrypted.google.com/search?{google:acceptedSuggestion}oq=learning+joomla+3+extension+development&sourceid=chrome&ie=UTF-8&q=learning+joomla+3+extension+development))
 
  Joomla! Programming By Mark Dexter, Louis Landry [here](http://www.informit.com/store/joomla-programming-9780132780810)
 
 [joomla-platform-examples](https://github.com/joomla/joomla-platform-examples)
 
-[sublime text 2 joomla snippets](https://github.com/joomlapro/joomla-bundle "sublime text 2 joomla snippets")
+[sublime text 2/3 joomla snippets](https://github.com/joomlapro/joomla-bundle "sublime text 2 joomla snippets")
 
 # To-do
 read the todo.txt file
