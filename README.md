@@ -9,7 +9,6 @@
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 Based on generator-joomla-component by Sean Goresht
- [![Build Status](https://secure.travis-ci.org/srsgores/generator-joomla-component.png?branch=master)](https://travis-ci.org/srsgores/generator-joomla-component)
 
 A component generator for [Yeoman](http://yeoman.io).
 
@@ -75,7 +74,7 @@ Finally, initiate the generator:
 $ yo joomla-spc
 ```
 
-## Subgenerators
+## Sub-generators
 There are currently **4** subgenerators planned; only ``controller`` is working right now:
 
 1. *model*: ``yo joomla-spc:model "model-name"`` - *Not yet implemented*
@@ -90,13 +89,13 @@ Provides a basic level of scafolding for developing a basic component.
 
 ### intermediate
 Based on Joomla's HelloWorld sample.
-Provides a intermediate level of scafolding for developing a intermediate component.
+Provides a intermediate level of scaffolding for developing a intermediate component.
 Includes an sql file and install script.php file.
 Demonstrates the use of views of singular and plural types.
 Illustrates the use of graphics in menus.
 
 ### advanced
-Provides a intermediate level of scafolding for developing a intermediate component.
+Provides a intermediate level of scaffolding for developing a intermediate component.
 Includes an sql file and install script.php file.
 Demonstrates the use of views of singular and plural types.
 Demonstrates the use of a control panel for more complex projects.
@@ -106,7 +105,9 @@ Demonstrates the use of a control panel for more complex projects.
 Select from list upon startup of *yo joomla-spc*
 
 *component*: *implemented*
-Component levels of basic, intermediate and advanced
+
+
+- Component levels of basic, intermediate and advanced
 
 *module*:*Not yet implemented*
 
@@ -162,15 +163,19 @@ this will zip (grunt's default task) up files located in app directory and place
 
 ## Using the extensions
 
-Recommend going here https://bitnami.com/stack/joomla to download and install bitnami joomla for your system.
+Recommend going [here](https://bitnami.com/stack/joomla) to download and install bitnami joomla for your system.
 
-After creating the extension in your working directory run grunt and the default task will zip up the app directory and place the file in the dist directory. This file then can be installed into Joomla using the normal procedure. By installing the extension this will register the extension and then can be directly edited and debugged in Joomla installation.
+After creating the extension in your working directory run 
+
+	grunt 
+
+and the default task will zip up the app directory and place the file in the dist directory. This file then can be installed into Joomla using the normal procedure. By installing the extension it will register the extension and have the ability to be directly edited and debugged within the Joomla installation.
 The generated extension can be zipped up and installed by default.
 
 ## Reference
 The components and starting logic are derived form the book [Learning Joomla 3 Extension Development Third Edition](http://www.amazon.com/Learning-Joomla-Extension-Development-Third-Edition/dp/1782168370) (you can also find this on *other* alternative locations on the internet [by googling](https://encrypted.google.com/search?{google:acceptedSuggestion}oq=learning+joomla+3+extension+development&sourceid=chrome&ie=UTF-8&q=learning+joomla+3+extension+development))
- Joomla! Programming By Mark Dexter, Louis Landry
-http://www.informit.com/store/joomla-programming-9780132780810
+
+ Joomla! Programming By Mark Dexter, Louis Landry [here](http://www.informit.com/store/joomla-programming-9780132780810)
 
 [joomla-platform-examples](https://github.com/joomla/joomla-platform-examples)
 
