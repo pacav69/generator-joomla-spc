@@ -175,9 +175,13 @@ The components and starting logic are derived form the book [Learning Joomla 3 E
 
  Joomla! Programming By Mark Dexter, Louis Landry [here](http://www.informit.com/store/joomla-programming-9780132780810)
 
-[joomla-platform-examples](https://github.com/joomla/joomla-platform-examples)
+[Joomla-platform-examples](https://github.com/joomla/joomla-platform-examples)
 
 [sublime text 2/3 joomla snippets](https://github.com/joomlapro/joomla-bundle "sublime text 2 joomla snippets")
+
+[Javascript to Coffeescript](http://js2.coffee/ "Coffeescript")
+
+[Coffeescript Website](http://coffeescript.org/ "http://coffeescript.org/")
 
 # To-do
 read the todo.txt file

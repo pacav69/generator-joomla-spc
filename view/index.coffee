@@ -35,5 +35,7 @@ module.exports = class ViewGenerator extends yeoman.generators.NamedBase
 			Now let's create that view under the subdirectory views/#{@viewFolderName} for you...
 		"""
 	generateView: ->
-		@template "_view.html.php", "src/" + "views/#{@viewFolderName}/view.html.php"
-		@template "_default.php", "src/" + "views/#{@viewFolderName}/default.php"
+		@template "_view.html.php", "app/admin/" + "views/#{@viewFolderName}/view.html.php"
+		@template "_default.php", "app/admin/" + "views/#{@viewFolderName}/default.php"
+		@template "_view.html.php", "app/site/" + "views/#{@viewFolderName}/view.html.php"
+		@template "_default.php", "app/site/" + "views/#{@viewFolderName}/default.php"

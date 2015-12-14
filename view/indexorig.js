@@ -1,14 +1,11 @@
 
 /*
-
-/*
 	generator-joomla-spc
 
 	index.coffee
 
-	@author Sean
+	@author Sean Goresht
 
-	@note Created on 2014-10-03 by PhpStorm
 	@note uses Codoc
 	@see https://github.com/mklabs/yeoman/wiki/generators coffeescript with yeoman
 	@see https://github.com/coffeedoc/codo
@@ -17,8 +14,8 @@
 (function() {
   (function() {
     'use strict';
-    var ControllerGenerator, extend, hasProp, path, yeoman;
-    ControllerGenerator = void 0;
+    var ViewGenerator, extend, hasProp, path, yeoman;
+    ViewGenerator = void 0;
     path = void 0;
     yeoman = void 0;
     extend = function(child, parent) {
@@ -41,18 +38,18 @@
     path = require('path');
 
     /*
-    	@class ControllerGenerator sub-generator for joomla component controllers
+    	@class ViewGenerator sub-generator for joomla component controllers
      */
-    module.exports = ControllerGenerator = (function(superClass) {
-      'var ControllerGenerator';
-      ControllerGenerator = function(args, options, config) {
+    module.exports = ViewGenerator = (function(superClass) {
+      'var ViewGenerator';
+      ViewGenerator = function(args, options, config) {
         var pkg, ref, ref1, ref2, ref3;
         pkg = void 0;
         ref = void 0;
         ref1 = void 0;
         ref2 = void 0;
         ref3 = void 0;
-        ControllerGenerator.__super__.constructor.call(this, args, options, config);
+        ViewGenerator.__super__.constructor.call(this, args, options, config);
         pkg = JSON.parse(this.readFileAsString(path.join(process.cwd(), './package.json')));
         this.componentName = pkg.componentName;
         this.description = pkg.description;
@@ -62,15 +59,16 @@
         this.authorURL = (ref2 = pkg.author) !== null ? ref2.url : void 0;
         this.license = (ref3 = pkg.licenses[0]) !== null ? ref3.type : void 0;
         this.currentYear = (new Date()).getFullYear();
-        this.controllerClassName = this._.classify(this.name);
-        console.log('You called the controller subgenerator with the argument ' + this.name + '.\nNow let\'s create that controller ' + this.controllerClassName + '.php for you...');
+        this.viewFolderName = this._.slugify(this.name);
+        this.viewClassName = this._.classify(this.name);
+        console.log('You called the view subgenerator with the argument ' + this.name + '.\nNow let\'s create that view under the subdirectory views/' + this.viewFolderName + ' for you...');
       };
-      extend(ControllerGenerator, superClass);
-      ControllerGenerator.prototype.generateController = function() {
-        this.template('_controller.php', 'app/admin/' + 'controllers/' + this.controllerClassName + '.php');
-        return this.template('_controller.php', 'app/site/' + 'controllers/' + this.controllerClassName + '.php');
+      extend(ViewGenerator, superClass);
+      ViewGenerator.prototype.generateView = function() {
+        this.template('_view.html.php', 'app/' + 'views/' + this.viewFolderName + '/view.html.php');
+        return this.template('_default.php', 'app/' + 'views/' + this.viewFolderName + '/default.php');
       };
-      return ControllerGenerator;
+      return ViewGenerator;
     })(yeoman.generators.NamedBase);
   }).call(this);
 
