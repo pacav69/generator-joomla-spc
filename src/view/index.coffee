@@ -92,12 +92,14 @@
           return
 
         extend ViewGenerator, superClass
-
+        # need to change views line to "views/#{@viewFolderName}/view.html.php"
+        # @template "_view.html.php", "views/#{@viewFolderName}/view.html.php"
+        # @template "_default.php", "views/#{@viewFolderName}/default.php"
         ViewGenerator::generateView = ->
-          @template '_view.html.php', 'app/admin/' + 'views/' + @viewFolderName + '/view.html.php'
-          @template '_default.php', 'app/admin/' + 'views/' + @viewFolderName + '/default.php'
+          @template '_view.html.php', 'app/admin/' + "views/#{@viewFolderName}/view.html.php"
+          @template '_default.php', 'app/admin/' + "views/#{@viewFolderName}/default.php"
           @template '_view.html.php', 'app/site/' + 'views/' + @viewFolderName + '/view.html.php'
-          @template '_default.php', 'app/site/' + 'views/' + @viewFolderName + '/default.php'
+          @template '_default.php', 'app/site/' + "views/#{@viewFolderName}/view.html.php"
           return
 
         ViewGenerator
