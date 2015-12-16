@@ -1,6 +1,6 @@
 {
   "name": "generator-joomla-spc",
-  "version": "0.1.1",
+  "version": "0.0.6",
   "description": "Joomla-spc generator for Yeoman. Creates Joomla 2.5 and 3.0 files",
   "keywords": [
     "yeoman-generator",
