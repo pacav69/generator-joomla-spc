@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     watch: {
 
                 src: {
-                    files: ['app/index.coffee', 'controller/index.coffee'],
+                    files: ['src/indexapp.coffee', 'src/controller/index.coffee','src/helper/index.coffee','src/model/index.coffee','src/view/index.coffee'],
                     tasks: ['coffeelint','coffee','jshint'],
                 // },
                 // test: {
@@ -34,10 +34,13 @@ module.exports = function(grunt) {
 
     coffeelint: {
         app: 
-            ['app/index.coffee']
+            ['src/indexapp.coffee','src/controller/index.coffee', 'src/helper/index.coffee','src/model/index.coffee','src/view/index.coffee']
          },
+         options: {
+        configFile: 'coffeelint.json'
+      },
     jshint: {
-      all: ['Gruntfile.js', 'app/index.js']
+      all: ['Gruntfile.js', 'app/index.js', 'controller/index.js','helper/index.js','model/index.js','view/index.js']
     },
     coffee: {
       compileWithMaps: {
@@ -46,11 +49,11 @@ module.exports = function(grunt) {
         },
 	  	// compile: {
 	    files: {
-	      'app/index.js': 'app/index.coffee'// , // 1:1 compile
-        // 'controller/index.js': 'controller/index.coffee',
-        // 'helper/index.js': 'helper/index.coffee',
-        // 'model/index.js': 'model/index.coffee',
-        // 'view/index.js': 'view/index.coffee'
+	      'app/index.js': 'src/indexapp.coffee', // 1:1 compile
+        'controller/index.js': 'src/controller/index.coffee',
+        'helper/index.js': 'src/helper/index.coffee',
+        'model/index.js': 'src/model/index.coffee',
+        'view/index.js': 'src/view/index.coffee'
 	      //'path/to/another.js': ['path/to/sources/*.coffee', 'path/to/more/*.coffee'] // compile and concat into single file
 	    	}
 		}
@@ -68,6 +71,6 @@ module.exports = function(grunt) {
 
   // Default task(s).
   // grunt.registerTask('default', ['uglify']);
-  grunt.registerTask('default', ['coffee']);
+  grunt.registerTask('default', ['watch']);
 
 };

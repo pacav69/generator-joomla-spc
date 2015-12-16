@@ -57,6 +57,8 @@ describe('joomla-spc generator', function ()
 		//arrange
 		//act
 		//assert
+		var done;
+		done = this.async();
 		helpers.mockPrompt(this.app, generatorDefaults);
 		this.app.options['skip-install'] = true;
 		this.app.run({}, function ()
@@ -82,6 +84,8 @@ describe('joomla-spc generator', function ()
 		];
 		//act
 		//assert
+		var done;
+		done = this.async();
 		helpers.mockPrompt(this.app, generatorDefaults);
 		this.app.options['skip-install'] = true;
 		this.app.run({}, function ()
@@ -91,7 +95,7 @@ describe('joomla-spc generator', function ()
 		});
 	});
 
-	it("creates language files", function () {
+	it('creates language files', function () {
 		//arrange
 		var preferredLanguage = 'en-GB',
 			expectedLanguageFiles = [
@@ -100,6 +104,8 @@ describe('joomla-spc generator', function ()
 		];
 		//act
 		//assert
+		var done;
+		done = this.async();
 		helpers.mockPrompt(this.app, generatorDefaults);
 		this.app.options['skip-install'] = true;
 		this.app.run({}, function ()

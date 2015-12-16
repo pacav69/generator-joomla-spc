@@ -78,3 +78,4 @@ $RECYCLE.BIN/
 *.sublime-project
 *.sublime-workspace
 .vscode
+*.*tmp

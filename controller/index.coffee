@@ -35,4 +35,4 @@ module.exports = class ControllerGenerator extends yeoman.generators.NamedBase
 			Now let's create that controller #{@controllerClassName}.php for you...
 		"""
 	generateController: ->
-		@template "_controller.php", "src/" + "controllers/#{@controllerClassName}.php"
+		@template "_controller.php", "app/" + "controllers/#{@controllerClassName}.php"

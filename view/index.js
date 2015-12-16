@@ -93,10 +93,10 @@
           };
           extend(ViewGenerator, superClass);
           ViewGenerator.prototype.generateView = function() {
-            this.template('_view.html.php', 'app/admin/' + 'views/' + this.viewFolderName + '/view.html.php');
-            this.template('_default.php', 'app/admin/' + 'views/' + this.viewFolderName + '/default.php');
+            this.template('_view.html.php', 'app/admin/' + ("views/" + this.viewFolderName + "/view.html.php"));
+            this.template('_default.php', 'app/admin/' + ("views/" + this.viewFolderName + "/default.php"));
             this.template('_view.html.php', 'app/site/' + 'views/' + this.viewFolderName + '/view.html.php');
-            this.template('_default.php', 'app/site/' + 'views/' + this.viewFolderName + '/default.php');
+            this.template('_default.php', 'app/site/' + ("views/" + this.viewFolderName + "/view.html.php"));
           };
           return ViewGenerator;
         })(yeoman.generators.NamedBase);

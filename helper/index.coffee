@@ -35,4 +35,4 @@ module.exports = class HelperGenerator extends yeoman.generators.NamedBase
 			Now let's create that helper as helpers/#{@helperName}.php for you...
 		"""
 	generateHelper: ->
-		@template "_helper.php", "src/" + "helpers/#{@helperName}.php"
+		@template "_helper.php", "app/" + "helpers/#{@helperName}.php"

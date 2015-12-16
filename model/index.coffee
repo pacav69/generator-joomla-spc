@@ -35,4 +35,4 @@ module.exports = class ModelGenerator extends yeoman.generators.NamedBase
 			Now let's create that model as models/#{@modelName}.php for you...
 		"""
 	generateModel: ->
-		@template "_model.php", "src/" + "models/#{@modelName}.php"
+		@template "_model.php", "app/" + "models/#{@modelName}.php"
