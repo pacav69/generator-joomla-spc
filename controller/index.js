@@ -17,7 +17,7 @@
 (function() {
   (function() {
     'use strict';
-    var ControllerGenerator, extend, hasProp, path, yeoman;
+    var ControllerGenerator, chalk, extend, hasProp, path, yeoman, yosay;
     ControllerGenerator = void 0;
     path = void 0;
     yeoman = void 0;
@@ -38,6 +38,8 @@
     };
     hasProp = {}.hasOwnProperty;
     yeoman = require('yeoman-generator');
+    yosay = require('yosay');
+    chalk = require('chalk');
     path = require('path');
 
     /*
@@ -63,7 +65,7 @@
         this.license = (ref3 = pkg.licenses[0]) !== null ? ref3.type : void 0;
         this.currentYear = (new Date()).getFullYear();
         this.controllerClassName = this._.classify(this.name);
-        console.log('You called the controller subgenerator with the argument ' + this.name + '.\nNow let\'s create that controller ' + this.controllerClassName + '.php for you...');
+        this.log(yosay(chalk.white('You called the controller subgenerator with the argument ' + this.name + '.\nNow let\'s create that controller ' + this.controllerClassName + '.php for you...')));
       };
       extend(ControllerGenerator, superClass);
       ControllerGenerator.prototype.generateController = function() {

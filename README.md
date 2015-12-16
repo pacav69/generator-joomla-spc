@@ -7,10 +7,10 @@
 
 Based on generator-joomla-component by Sean Goresht
 
-A component generator for [Yeoman](http://yeoman.io).
+A extension generator for [Yeoman](http://yeoman.io).
 
 ## What It Does (Better)
-Using this generator, you can quickly and effortlessly *scaffold* out a new [joomla](http://joomla.org) component, using recommended MVC design pattern and coding standards.  These include:
+Using this generator, you can quickly and effortlessly *scaffold* out a new [joomla](http://joomla.org) extension, using recommended MVC design pattern and coding standards.  These include:
 
 * Internationalization language files
 * Tabs for indents
@@ -74,10 +74,10 @@ $ yo joomla-spc
 ## Sub-generators
 There are currently **4** subgenerators planned; only ``controller`` is working right now:
 
-1. *model*: ``yo joomla-spc:model "model-name"`` - *Not yet implemented*
-2. *view*: ``yo joomla-spc:view "view-name"`` - *Not yet implemented*
+1. *model*: ``yo joomla-spc:model "model-name"`` 
+2. *view*: ``yo joomla-spc:view "view-name"`` 
 3. *controller*: ``yo joomla-spc:controller "controller-name"`` 
-4. *helper*: ``yo joomla-spc:helper "helper-name"`` - *Not yet implemented*
+4. *helper*: ``yo joomla-spc:helper "helper-name"`` 
 
 ## Component template levels
 

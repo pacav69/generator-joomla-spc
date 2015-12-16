@@ -1,3 +1,5 @@
+	v0.1.5
+	added yosay to sub-generators controller, helper, model, and view
     v0.1.4
     moved coffee scripts to src folder
     updated index.js files in app, controller, helper, model, and view

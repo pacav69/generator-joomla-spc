@@ -35,6 +35,8 @@
 
   hasProp = {}.hasOwnProperty
   yeoman = require('yeoman-generator')
+  yosay = require('yosay')
+  chalk = require('chalk')
   path = require('path')
 
   ###
@@ -61,7 +63,8 @@
       @license = if (ref3 = pkg.licenses[0]) != null then ref3.type else undefined
       @currentYear = (new Date()).getFullYear()
       @controllerClassName = @_.classify(@name)
-      console.log 'You called the controller subgenerator with the argument ' + @name + '.\nNow let\'s create that controller ' + @controllerClassName + '.php for you...'
+      @log(yosay(chalk.white('You called the controller subgenerator with the argument ' + this.name + '.\nNow let\'s create that controller ' + this.controllerClassName + '.php for you...')))
+      # console.log 'You called the controller subgenerator with the argument ' + @name + '.\nNow let\'s create that controller ' + @controllerClassName + '.php for you...'
       return
 
     extend ControllerGenerator, superClass

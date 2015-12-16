@@ -16,7 +16,7 @@
     (function() {
       (function() {
         'use strict';
-        var ViewGenerator, extend, hasProp, path, yeoman;
+        var ViewGenerator, chalk, extend, hasProp, path, yeoman, yosay;
         ViewGenerator = void 0;
         extend = void 0;
         hasProp = void 0;
@@ -53,6 +53,8 @@
         };
         hasProp = {}.hasOwnProperty;
         yeoman = require('yeoman-generator');
+        yosay = require('yosay');
+        chalk = require('chalk');
         path = require('path');
 
         /*
@@ -89,7 +91,7 @@
             this.currentYear = (new Date()).getFullYear();
             this.viewFolderName = this._.slugify(this.name);
             this.viewClassName = this._.classify(this.name);
-            console.log('You called the view subgenerator with the argument ' + this.name + '.\nNow let\'s create that view under the subdirectory views/' + this.viewFolderName + ' for you...');
+            this.log(yosay(chalk.white('You called the view subgenerator with the argument ' + this.name + '.\nNow let\'s create that view under the subdirectory views/' + this.viewFolderName + ' for you...')));
           };
           extend(ViewGenerator, superClass);
           ViewGenerator.prototype.generateView = function() {
