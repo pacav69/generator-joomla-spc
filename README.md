@@ -72,7 +72,7 @@ $ yo joomla-spc
 ```
 
 ## Sub-generators
-There are currently **4** subgenerators planned; only ``controller`` is working right now:
+There are currently **4** subgenerators:
 
 1. *model*: ``yo joomla-spc:model "model-name"`` 
 2. *view*: ``yo joomla-spc:view "view-name"`` 
