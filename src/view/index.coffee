@@ -90,9 +90,9 @@
           @currentYear = (new Date()).getFullYear()
           @viewFolderName = @_.slugify(@name)
           @viewClassName = @_.classify(@name)
-          @log(yosay(chalk.white('You called the view subgenerator with the argument ' + @name + '.\nNow let\'s create that view under the subdirectory views/' + @viewFolderName + ' for you...')))
+          # @log(yosay(chalk.white('You called the view subgenerator with the argument ' + @name + '.\nNow let\'s create that view under the subdirectory views/' + @viewFolderName + ' for you...')))
 
-          # console.log 'You called the view subgenerator with the argument ' + @name + '.\nNow let\'s create that view under the subdirectory views/' + @viewFolderName + ' for you...'
+          @log 'You called the view subgenerator with the argument ' + @name + '.\nNow let\'s create that view under the subdirectory views/' + @viewFolderName + ' for you...'
           return
 
         extend ViewGenerator, superClass

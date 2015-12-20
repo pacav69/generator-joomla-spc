@@ -91,7 +91,7 @@
             this.currentYear = (new Date()).getFullYear();
             this.viewFolderName = this._.slugify(this.name);
             this.viewClassName = this._.classify(this.name);
-            this.log(yosay(chalk.white('You called the view subgenerator with the argument ' + this.name + '.\nNow let\'s create that view under the subdirectory views/' + this.viewFolderName + ' for you...')));
+            this.log('You called the view subgenerator with the argument ' + this.name + '.\nNow let\'s create that view under the subdirectory views/' + this.viewFolderName + ' for you...');
           };
           extend(ViewGenerator, superClass);
           ViewGenerator.prototype.generateView = function() {

@@ -62,9 +62,9 @@
       @currentYear = (new Date()).getFullYear()
       @modelName = @_.slugify(@name)
       @modelClassName = @_.classify(@name)
-      @log(yosay(chalk.white('You called the model subgenerator with the argument ' + @name + '.\nNow let\'s create that model as models/' + @modelName + '.php for you...')))
+      # @log(yosay(chalk.white('You called the model subgenerator with the argument ' + @name + '.\nNow let\'s create that model as models/' + @modelName + '.php for you...')))
 
-      # console.log 'You called the model subgenerator with the argument ' + @name + '.\nNow let\'s create that model as models/' + @modelName + '.php for you...'
+      @log 'You called the model subgenerator with the argument ' + @name + '.\nNow let\'s create that model as models/' + @modelName + '.php for you...'
       return
 
     extend ModelGenerator, superClass

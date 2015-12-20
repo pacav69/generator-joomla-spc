@@ -62,9 +62,9 @@
       @currentYear = (new Date()).getFullYear()
       @helperName = @_.slugify(@name)
       @helperClassName = @_.classify(@name)
-      @log(yosay(chalk.white('You called the helper subgenerator with the argument ' + @name + '.\nNow let\'s create that helper as helpers/' + @helperName + '.php for you...')))
+      # @log(yosay(chalk.white('You called the helper subgenerator with the argument ' + @name + '.\nNow let\'s create that helper as helpers/' + @helperName + '.php for you...')))
 
-      # console.log 'You called the helper subgenerator with the argument ' + @name + '.\nNow let\'s create that helper as helpers/' + @helperName + '.php for you...'
+      @log 'You called the helper subgenerator with the argument ' + @name + '.\nNow let\'s create that helper as helpers/' + @helperName + '.php for you...'
       return
 
     extend HelperGenerator, superClass

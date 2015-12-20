@@ -65,7 +65,7 @@
         this.license = (ref3 = pkg.licenses[0]) !== null ? ref3.type : void 0;
         this.currentYear = (new Date()).getFullYear();
         this.controllerClassName = this._.classify(this.name);
-        this.log(yosay(chalk.white('You called the controller subgenerator with the argument ' + this.name + '.\nNow let\'s create that controller ' + this.controllerClassName + '.php for you...')));
+        this.log('You called the controller subgenerator with the argument ' + this.name + '.\nNow let\'s create that controller ' + this.controllerClassName + '.php for you...');
       };
       extend(ControllerGenerator, superClass);
       ControllerGenerator.prototype.generateController = function() {

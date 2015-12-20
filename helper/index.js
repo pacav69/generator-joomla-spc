@@ -63,7 +63,7 @@
         this.currentYear = (new Date()).getFullYear();
         this.helperName = this._.slugify(this.name);
         this.helperClassName = this._.classify(this.name);
-        this.log(yosay(chalk.white('You called the helper subgenerator with the argument ' + this.name + '.\nNow let\'s create that helper as helpers/' + this.helperName + '.php for you...')));
+        this.log('You called the helper subgenerator with the argument ' + this.name + '.\nNow let\'s create that helper as helpers/' + this.helperName + '.php for you...');
       };
       extend(HelperGenerator, superClass);
       HelperGenerator.prototype.generateHelper = function() {

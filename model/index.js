@@ -63,7 +63,7 @@
         this.currentYear = (new Date()).getFullYear();
         this.modelName = this._.slugify(this.name);
         this.modelClassName = this._.classify(this.name);
-        this.log(yosay(chalk.white('You called the model subgenerator with the argument ' + this.name + '.\nNow let\'s create that model as models/' + this.modelName + '.php for you...')));
+        this.log('You called the model subgenerator with the argument ' + this.name + '.\nNow let\'s create that model as models/' + this.modelName + '.php for you...');
       };
       extend(ModelGenerator, superClass);
       ModelGenerator.prototype.generateModel = function() {

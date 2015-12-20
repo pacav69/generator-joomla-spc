@@ -78,5 +78,7 @@ $RECYCLE.BIN/
 *.sublime-project
 *.sublime-workspace
 .vscode
-*.*tmp
+*.php-tmp
 devindex
+typings/express/express.d.ts
+typings/node/node.d.ts
