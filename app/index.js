@@ -11,7 +11,7 @@
 (function() {
   'use strict';
   (function() {
-    var Generator, chalk, config, exec, fs, inquirer, path, rimraf, semver, ucfirst, util, yeoman, yosay;
+    var Generator, chalk, config, exec, fs, inquirer, path, rimraf, semver, util, yeoman, yosay;
     Generator = void 0;
     config = void 0;
     exec = void 0;
@@ -34,7 +34,6 @@
     yosay = require('yosay');
     chalk = require('chalk');
     inquirer = require('inquirer');
-    ucfirst = require('ucfirst');
     rimraf = require('rimraf');
     exec = require('child_process').exec;
     semver = require('semver');
@@ -340,7 +339,6 @@
       }
       this.prompt(prompts, (function(props) {
         var values;
-        values = void 0;
         values = void 0;
         this.description = props.description;
         this.componentName = props.componentName;
