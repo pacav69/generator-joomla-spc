@@ -477,7 +477,7 @@
       this.template('script.php', 'app/' + 'script.php');
       this.template('media/images/_component-name_menu.png', 'app/media/images/' + this._.slugify(this.componentName) + '_menu.png');
       this.template('media/images/_component-name_toolbar.png', 'app/media/images/' + this._.slugify(this.componentName) + '_toolbar.png');
-      this.template('_Gruntfile.js', 'app/Gruntfile.js');
+      this.template('_Gruntfile.js', 'Gruntfile.js');
       done();
     };
 
@@ -530,7 +530,7 @@
       this.template('site/controller.php', 'app/site/' + 'controller.php');
       this.template('_component-name.xml', 'app/' + this._.slugify(this.componentName) + '.xml');
       this.template('script.php', 'app/' + 'script.php');
-      this.template('_Gruntfile.js', 'app/Gruntfile.js');
+      this.template('_Gruntfile.js', 'Gruntfile.js');
       this.directory('media', 'app/media');
       this.directory('admin/sql/updates/', 'app/admin/sql/updates/');
       done();
@@ -580,7 +580,7 @@
       this.template('script.php', 'app/' + 'script.php');
       this.template('media/images/_component-name_menu.png', 'app/media/images/' + this._.slugify(this.componentName) + '_menu.png');
       this.template('media/images/_component-name_toolbar.png', 'app/media/images/' + this._.slugify(this.componentName) + '_toolbar.png');
-      this.template('_Gruntfile.js', 'app/Gruntfile.js');
+      this.template('_Gruntfile.js', 'Gruntfile.js');
       done();
     };
 

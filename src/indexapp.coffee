@@ -413,7 +413,6 @@
     @prompt prompts, ((props) ->
       values = undefined
       #var str = props.componentGroup;
-      values = undefined
       @description = props.description
       @componentName = props.componentName
       @componentGroup = props.componentGroup
@@ -551,7 +550,7 @@
     @template 'media/images/_component-name_menu.png', 'app/media/images/' + @_.slugify(@componentName) + '_menu.png'
     @template 'media/images/_component-name_toolbar.png', 'app/media/images/' + @_.slugify(@componentName) + '_toolbar.png'
     #this._install();
-    @template '_Gruntfile.js', 'app/Gruntfile.js'
+    @template '_Gruntfile.js', 'Gruntfile.js'
     done()
     return
 
@@ -619,7 +618,7 @@
     #@template 'media/images/_component-name_menu.png', 'app/media/images/' + @_.slugify(@componentName) + '_menu.png'
     #@template 'media/images/_component-name_toolbar.png', 'app/media/images/' + @_.slugify(@componentName) + '_toolbar.png'
     #this._install();
-    @template '_Gruntfile.js', 'app/Gruntfile.js'
+    @template '_Gruntfile.js', 'Gruntfile.js'
     @directory 'media', 'app/media'
     @directory 'admin/sql/updates/', 'app/admin/sql/updates/'
     done()
@@ -671,7 +670,7 @@
     @template 'media/images/_component-name_menu.png', 'app/media/images/' + @_.slugify(@componentName) + '_menu.png'
     @template 'media/images/_component-name_toolbar.png', 'app/media/images/' + @_.slugify(@componentName) + '_toolbar.png'
     #this._install();
-    @template '_Gruntfile.js', 'app/Gruntfile.js'
+    @template '_Gruntfile.js', 'Gruntfile.js'
     done()
     return
 
