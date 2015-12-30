@@ -62,7 +62,7 @@ or
 To install generator-joomla-spc from npm, run:
 
 ```
-$ npm install -g generator-joomla-spc
+$ npm install -g yo generator-joomla-spc
 ```
 
 Finally, initiate the generator:
