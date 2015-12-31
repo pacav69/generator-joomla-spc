@@ -47,6 +47,9 @@
   yeoman = require('yeoman-generator')
   #globalconfig = require('global-config.js');
   yosay = require('yosay')
+  updateNotifier = require('update-notifier')
+  stringLength = require('string-length')
+  pkg = require('../package.json')
   chalk = require('chalk')
   inquirer = require('inquirer')
   ucfirst = require('ucfirst')
@@ -61,6 +64,14 @@
 
     @log yosay(chalk.white('Welcome to the SPC Joomla Extension generator!'))
   
+    return
+  Generator::updateCheck = ->
+    notifier = updateNotifier(pkg: pkg)
+    message = []
+    if notifier.update
+      message.push 'Update available: ' + chalk.green.bold(notifier.update.latest) + chalk.gray(' (current: ' + notifier.update.current + ')')
+      message.push 'Run ' + chalk.magenta('npm install -g ' + pkg.name) + ' to update.'
+      console.log yosay(message.join(' '), maxLength: stringLength(message[0]))
     return
 
   Generator::askForType = ->

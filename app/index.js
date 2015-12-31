@@ -11,7 +11,7 @@
 (function() {
   'use strict';
   (function() {
-    var Generator, chalk, config, exec, fs, inquirer, path, rimraf, semver, util, yeoman, yosay;
+    var Generator, chalk, config, exec, fs, inquirer, path, pkg, rimraf, semver, stringLength, ucfirst, updateNotifier, util, yeoman, yosay;
     Generator = void 0;
     config = void 0;
     exec = void 0;
@@ -32,8 +32,12 @@
     fs = require('fs');
     yeoman = require('yeoman-generator');
     yosay = require('yosay');
+    updateNotifier = require('update-notifier');
+    stringLength = require('string-length');
+    pkg = require('../package.json');
     chalk = require('chalk');
     inquirer = require('inquirer');
+    ucfirst = require('ucfirst');
     rimraf = require('rimraf');
     exec = require('child_process').exec;
     semver = require('semver');
@@ -42,6 +46,20 @@
     util.inherits(Generator, yeoman.generators.NamedBase);
     Generator.prototype.startGenerator = function() {
       this.log(yosay(chalk.white('Welcome to the SPC Joomla Extension generator!')));
+    };
+    Generator.prototype.updateCheck = function() {
+      var message, notifier;
+      notifier = updateNotifier({
+        pkg: pkg
+      });
+      message = [];
+      if (notifier.update) {
+        message.push('Update available: ' + chalk.green.bold(notifier.update.latest) + chalk.gray(' (current: ' + notifier.update.current + ')'));
+        message.push('Run ' + chalk.magenta('npm install -g ' + pkg.name) + ' to update.');
+        console.log(yosay(message.join(' '), {
+          maxLength: stringLength(message[0])
+        }));
+      }
     };
     Generator.prototype.askForType = function() {
       var done;
