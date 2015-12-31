@@ -59,19 +59,26 @@
   config = require('../configuserglobal.js')
   module.exports = Generator
   util.inherits Generator, yeoman.generators.NamedBase
-
+  ###
+  # 1000 * 60 * 60 * 24; // 1 day
+  # 1000 * 60 * 60 * 24 * 7 // 1 week
+  ###
+  
+  Generator::updateCheck = ->
+    notifier = updateNotifier(pkg: pkg, updateCheckInterval: 1000 * 60 * 60 * 24)
+    message = []
+    # console.log('notifier:', notifier.update)
+    if notifier.update
+      message.push 'Update available: ' + chalk.green.bold(notifier.update.latest) + chalk.gray(' (current: ' + notifier.update.current + ')')
+      message.push 'Run ' + chalk.magenta('npm install -g yo ' + pkg.name) + ' to update.'
+      message.push('\n' + chalk.white.bold('Recommend updating ') + chalk.green.bold(pkg.name) + chalk.white.bold(' before continuing.'))
+      console.log yosay(message.join(' '), maxLength: stringLength(message[0]))
+    return
+    
   Generator::startGenerator = ->
 
     @log yosay(chalk.white('Welcome to the SPC Joomla Extension generator!'))
   
-    return
-  Generator::updateCheck = ->
-    notifier = updateNotifier(pkg: pkg)
-    message = []
-    if notifier.update
-      message.push 'Update available: ' + chalk.green.bold(notifier.update.latest) + chalk.gray(' (current: ' + notifier.update.current + ')')
-      message.push 'Run ' + chalk.magenta('npm install -g ' + pkg.name) + ' to update.'
-      console.log yosay(message.join(' '), maxLength: stringLength(message[0]))
     return
 
   Generator::askForType = ->
@@ -479,6 +486,7 @@
         # this.generator.installDependencies = true;
         # @generator.installDependencies = true
         ###
+        @generator.installDependencies = true
         switch @componentComGroup
           when 'basic'
             console.log 'componentComGroup basic'

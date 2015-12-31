@@ -1,3 +1,5 @@
+    v0.1.6
+    added updateCheck function for generator
 	v0.1.5
 	added yosay to sub-generators controller, helper, model, and view
     v0.1.4

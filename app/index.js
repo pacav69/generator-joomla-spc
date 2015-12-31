@@ -44,22 +44,29 @@
     config = require('../configuserglobal.js');
     module.exports = Generator;
     util.inherits(Generator, yeoman.generators.NamedBase);
-    Generator.prototype.startGenerator = function() {
-      this.log(yosay(chalk.white('Welcome to the SPC Joomla Extension generator!')));
-    };
+
+    /*
+     * 1000 * 60 * 60 * 24; // 1 day
+     * 1000 * 60 * 60 * 24 * 7 // 1 week
+     */
     Generator.prototype.updateCheck = function() {
       var message, notifier;
       notifier = updateNotifier({
-        pkg: pkg
+        pkg: pkg,
+        updateCheckInterval: 1000 * 60 * 60 * 24
       });
       message = [];
       if (notifier.update) {
         message.push('Update available: ' + chalk.green.bold(notifier.update.latest) + chalk.gray(' (current: ' + notifier.update.current + ')'));
-        message.push('Run ' + chalk.magenta('npm install -g yo' + pkg.name) + ' to update.');
+        message.push('Run ' + chalk.magenta('npm install -g yo ' + pkg.name) + ' to update.');
+        message.push('\n' + chalk.white.bold('Recommend updating ') + chalk.green.bold(pkg.name) + chalk.white.bold(' before continuing.'));
         console.log(yosay(message.join(' '), {
           maxLength: stringLength(message[0])
         }));
       }
+    };
+    Generator.prototype.startGenerator = function() {
+      this.log(yosay(chalk.white('Welcome to the SPC Joomla Extension generator!')));
     };
     Generator.prototype.askForType = function() {
       var done;
@@ -405,6 +412,7 @@
            * this.generator.installDependencies = true;
            * @generator.installDependencies = true
            */
+          this.generator.installDependencies = true;
           switch (this.componentComGroup) {
             case 'basic':
               console.log('componentComGroup basic');
