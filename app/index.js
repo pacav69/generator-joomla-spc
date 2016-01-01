@@ -66,7 +66,7 @@
       }
     };
     Generator.prototype.startGenerator = function() {
-      this.log(yosay(chalk.white('Welcome to the SPC Joomla Extension generator!')));
+      this.log(yosay(chalk.white('Welcome to the SPC Joomla Extension generator!') + chalk.white('\nVersion ') + chalk.white.bold(pkg.version)));
     };
     Generator.prototype.askForType = function() {
       var done;

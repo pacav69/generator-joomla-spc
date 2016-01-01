@@ -77,7 +77,7 @@
     
   Generator::startGenerator = ->
 
-    @log yosay(chalk.white('Welcome to the SPC Joomla Extension generator!'))
+    @log yosay(chalk.white('Welcome to the SPC Joomla Extension generator!') + chalk.white('\nVersion ') + chalk.white.bold(pkg.version))
   
     return
 
